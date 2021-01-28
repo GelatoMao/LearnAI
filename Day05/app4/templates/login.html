@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>{{username}}</div>
+    <div>{{pwd}}</div>
+    <h1>登录页面</h1>
+    用户名:
+    <input type="text" /><br />
+    密码：
+    <input type="text" /><br />
+    <button>登录</button><br />
+    <img src="static/1.png" alt="" />
+    <!-- jinja2模板引擎 可以在Html中写python代码 -->
+    {% if pwd == '123' %}
+      <div>密码正确</div>
+    {% else %}
+      <div>密码错误</div>
+    {% endif %}
+  </body>
+</html>

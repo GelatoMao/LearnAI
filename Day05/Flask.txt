@@ -1,0 +1,36 @@
+前端：桌面应用程序（QT），移动端APP（混合开发，微信小程序），网站(vue)
+后台：Python（Flask）
+Flask：基于Python的WEB应用程序框架
+1、FLASK：WSGI服务、模板引擎（jinja2）、轻量级框架
+
+Flask：只提供web核心功能，自由，灵活，高度定制化
+Django：方便业务程序开发，提供了丰富的组件，比如：脚手架
+
+环境搭建：
+使用包管理工具：pip
+pip install flask  (系统)
+
+
+虚拟环境搭建：
+  - 不污染系统环境
+  - 方便系统库管理
+  - 方便多人协同开发
+
+安装虚拟环境搭建工具：pip install virtualenv
+项目中构建虚拟环境：virtualenv env
+激活虚拟环境：source env/bin/activate
+安装项目依赖： pip install ** 安装的包都在env目录下 类似本地安装
+移植：
+    pip freeze > requirements.txt
+
+
+
+协同：
+    pip install -r requirements.txt
+
+
+
+--------------------------------------
+
+- python3 -m pip install flask
+- python3 -m pip install virtualenv
